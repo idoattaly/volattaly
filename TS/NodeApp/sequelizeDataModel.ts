@@ -23,10 +23,13 @@ const CreditCardDetails = sequelize.define(
         pinCode: {
             type: DataTypes.STRING,
         },
-        cvv: {
+        cvv1: {
             type: DataTypes.STRING,
         },
-
+        cvv2: {
+            type: DataTypes.STRING,
+        },
+        
 
         expirationDate: {
             type: DataTypes.DATEONLY,
@@ -83,3 +86,5 @@ const User = sequelize.define(
         indexes: [{unique: true, fields: ['userId']}]
     }
 );
+
+
